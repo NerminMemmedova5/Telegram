@@ -1,0 +1,260 @@
+﻿<Window x:Class="Telegram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Telegram"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" >
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="9*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Background="White" >
+                    <Image Source="\Image\telegram_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                </Grid>
+                <Grid Grid.Column="1" Background="White">
+                    <Label Height="40" FontSize="20" FontWeight="Bold" Margin="0,10" Content="Telegram"></Label>
+                </Grid>
+                <Grid Grid.Column="2" Background="White">
+                    <Image Source="\Image\vm_icon.png" Width="40" Height="40" Stretch="Fill" ></Image>
+                </Grid>
+                <Grid Grid.Column="3" Background="White">
+                    <Label  Height="40" FontSize="20" Margin="0,10" Foreground="DeepSkyBlue" Content="Vitaly Medvedov"></Label>
+                </Grid>
+                <Grid Grid.Column="4" >
+                    <Image Source="\Image\botton_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="6*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="3.5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Border BorderBrush="LightGray" BorderThickness="0,2,0,2"></Border>
+                            <Image Source="\Image\search_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Border BorderBrush="LightGray" BorderThickness="0,2,2,2"></Border>
+                            <Label Height="40" FontSize="25" Foreground="LightGray" Content="Search"></Label>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Border BorderBrush="LightGray" BorderThickness="0,0,0,2"></Border>
+                            <Label Height="40" FontSize="25"  Content="Resent"></Label>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Border BorderBrush="LightGray" BorderThickness="0,0,2,2"></Border>
+                            <Image Source="\Image\rigth_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="2" Background="White">
+                        <UniformGrid Rows="5">
+                            <Grid Grid.Row="0" Background="LightGray">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                    <ColumnDefinition Width="3.2*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" >
+                                    <Image Source="\Image\alisa_porshe.png" Width="40" Height="40" Stretch="Fill"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1" >
+                                    <StackPanel>
+                                        <Label Height="27" FontSize="15" FontWeight="DemiBold" Content="Alisa Porshe"></Label>
+                                        <Label Height="23" FontSize="10" Content="Hi,help me pls"></Label>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                    <StackPanel>
+                                        <Label Content="01:30 AM"></Label>
+                                        <Label Height="30">
+                                            <Image Source="\Image\eight_icon.png" Margin="15,0"  Width="25" Height="25"></Image>
+                                        </Label>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1" Background="LightSteelBlue">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                    <ColumnDefinition Width="3.2*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" >
+                                    <Image Source="\Image\lovely_girl.png" Width="40" Height="40" Stretch="Fill"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1" >
+                                    <StackPanel>
+                                        <Label Height="27" FontSize="15" FontWeight="DemiBold" Content="Lovely Girl"></Label>
+                                        <Label Height="23" FontSize="10" Content="Typing..."></Label>
+                                    </StackPanel> 
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                    <StackPanel>
+                                        <Label Content="01:30 AM"></Label>
+                                    </StackPanel> 
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="2" Background="LightGray">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                    <ColumnDefinition Width="3.2*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Image Source="\Image\michsel_hasse.png" Width="40" Height="40" Stretch="Fill"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <StackPanel>
+                                        <Label Height="27" FontSize="15" FontWeight="DemiBold" Content="Michael Hasse"></Label>
+                                        <Label Height="23" FontSize="10" Content="Hi,help me pls"></Label>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                    <StackPanel>
+                                        <Label Content="01:30 AM"></Label>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="3" Background="LightGray">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                    <ColumnDefinition Width="3.2*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Image Source="\Image\allex_tessla.png" Width="40" Height="40" Stretch="Fill"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <StackPanel>
+                                        <Label Height="27" FontSize="15" FontWeight="DemiBold" Content="Allex Tessla"></Label>
+                                        <Label Height="23" FontSize="10" Content="I'm happy man what love it ..."></Label>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                    <StackPanel>
+                                        <Label Content="01:30 AM"></Label>
+                                        <Label Height="30">
+                                            <Image Source="\Image\eight_icon.png" Margin="15,0"  Width="25" Height="25"></Image>
+                                        </Label>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="4" Background="LightGray">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                    <ColumnDefinition Width="3.2*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Image Source="\Image\elena_cooper.png" Width="40" Height="40" Stretch="Fill"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <StackPanel>
+                                        <Label Height="27" FontSize="14" FontWeight="DemiBold" Content="Elena Cooper"></Label>
+                                        <Label Height="23" FontSize="10" Content="Ok, I will be there"></Label>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                    <StackPanel>
+                                        <Label Content="01:30 AM"></Label>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </UniformGrid>
+                    </Grid>
+                    <Grid Grid.Row="3" Background="WhiteSmoke">
+                        <ComboBox FontSize="30" VerticalContentAlignment="Center">
+                            <ComboBoxItem Content="All Contacts"></ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+                    <Grid Grid.Row="4" Background="WhiteSmoke"></Grid>
+                </Grid>
+                <Grid Grid.Column="1" Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="10*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Background="WhiteSmoke">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="3.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Border BorderBrush="LightGray" BorderThickness="0,2,0,2"></Border>
+                            <Image Source="\Image\lovely_girl.png" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Border BorderBrush="LightGray" BorderThickness="0,2,0,2"></Border>
+                            <Label FontSize="25" Content="Lovely Girl"></Label>
+                        </Grid>
+                        <Grid Grid.Column="2" >
+                            <Border BorderBrush="LightGray" BorderThickness="0,2,0,2"></Border>
+                            <Image Source="\Image\bin_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Grid>
+                        <Grid Grid.Column="3">
+                            <Border BorderBrush="LightGray" BorderThickness="0,2,0,2"></Border>
+                            <Image Source="\Image\setting_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1" Background="WhiteSmoke">
+                        
+                    </Grid>
+                    <Grid Grid.Row="2" Background="LightGray">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="3.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Image Source="\Image\attacment_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Image Source="\Image\smile_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Grid>
+                        <Grid Grid.Column="2">
+                            <Label Height="40" FontSize="20" Margin="0,5" Foreground="LightSlateGray" Content="Type your message..."></Label>
+                        </Grid>
+                        <Grid Grid.Column="3" >
+                            <Image Source="\Image\send_icon.png" Width="40" Height="40" Stretch="Fill"></Image>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            
+        </Grid>
+    </Grid>
+</Window>
